@@ -1,0 +1,8 @@
+.footer {
+    margin-top: auto; /* ทำให้ .footer ไปอยู่ด้านล่าง */
+    width: 100%;
+    padding: 10px; /* ปรับแต่งความกว้างและระยะห่างของ .footer */
+    text-align: center; /* จัดให้ข้อความอยู่กึ่งกลาง */
+    border-top: 1px solid #ccc; /* เพิ่มเส้นขั้นด้านบน */
+  }
+  

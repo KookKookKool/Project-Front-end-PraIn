@@ -1,0 +1,12 @@
+#btn1 {
+    width: 34%;
+margin-left: 30%;
+display: flex;
+justify-content: center;
+}
+
+#btn2 {
+width: 78%;
+margin-left: 0;
+justify-content: center;
+}

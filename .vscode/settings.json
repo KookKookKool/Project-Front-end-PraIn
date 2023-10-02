@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.multiRootWorkspaceName": "My-React-App",
+  "liveServer.settings.root": "/my-react-app/public",
+  "liveServer.settings.customBrowser": "chrome",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome",
+  "livePreview.defaultPreviewPath": "/src/Pages/Success.html"
+}

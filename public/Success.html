@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center; /* จัดให้เนื้อหาตรงกลางทั้งตัวอักษรและปุ่ม */
+        }
+
+        /* ปรับแต่งสไตล์ของปุ่ม */
+        .countdown-button {
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            /* พื้นหลังสีขาว */
+            color: black;
+            /* ข้อความสีดำ */
+            border: 2px solid #7c7c7c;
+            /* ขอบสีดำ */
+            border-radius: 10px;
+            /* มุมโค้ง */
+            padding: 10px 20px;
+            /* ขอบสัมพันธ์ของปุ่ม */
+            font-size: 16px;
+            /* ขนาดตัวอักษร */
+            margin-top: -2%;
+        }
+
+        /* ปรับแต่งสไตล์ของเวลานับถอยหลัง */
+        .countdown-timer {
+            font-size: 24px;
+            /* ขนาดตัวอักษรของเวลา */
+            color: blue;
+            /* สีเวลา */
+        }
+
+        #TextlowColor {
+            color: #7c7c7c;
+        }
+        #TextlowColor a {
+        color: #7c7c7c;
+        font-weight: bold;
+    }
+        #btn3 {
+            color: aliceblue;
+    width: 250px; /* กำหนดความกว้าง */
+    height: 50px; /* กำหนดความสูง */
+    padding: 10px 20px; /* กำหนดการเพิ่มเติมด้านในของปุ่ม */
+    font-size: 18px; /* กำหนดขนาดตัวอักษร */
+    margin: 10px; /* กำหนดระยะห่างรอบขอบของปุ่ม */
+}
+
+/* ปรับสีของปุ่ม */
+#btn:hover {
+    background-color: #2f00ff; /* สีเมื่อเม้าส์ไปวัตถุ */
+    color: white; /* สีตัวอักษรเมื่อเม้าส์ไปวัตถุ */
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <img src="/html1.png">
+
+    <!-- สร้างปุ่มและเวลานับถอยหลัง -->
+    <div class="countdown-button">
+        Payment Time Lift
+        <div class="countdown-timer" id="countdown">15:00</div>
+    </div>
+
+    <script>
+        // โค้ด JavaScript สำหรับการนับถอยหลัง
+        var countdownElement = document.getElementById('countdown');
+        var countdownTime = 15 * 60; // 15 นาทีในหน่วยวินาที
+
+        function updateCountdown() {
+            var minutes = Math.floor(countdownTime / 60);
+            var seconds = countdownTime % 60;
+
+            // แสดงเวลานับถอยหลังในรูปแบบ "mm:ss"
+            countdownElement.innerHTML = (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') +
+            seconds;
+
+            // ลดเวลานับถอยหลัง
+            countdownTime--;
+
+            // ตรวจสอบว่าเวลานับถอยหลังเสร็จสิ้นหรือไม่
+            if (countdownTime < 0) {
+                clearInterval(countdownInterval);
+                countdownElement.innerHTML = 'Time is up!';
+            }
+        }
+
+        // เริ่มการนับถอยหลังทุกๆ 1 วินาที
+        var countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+    <img src="/html2.png" style="
+    margin-top: -2%;">
+    
+    <img src="/html3.png" style="
+    margin-top: -2%;">
+  
+    <div style="margin-top: -42px;"><b>Please scan QR Code with your Mobile by using Mobile Banking Application</b><br></div>
+    <div style="margin-top: -56px;"> using the IOS operating system or in-app browsers (such as or Facebook)<br></div>
+    <div style="margin-top: -112px;">can utilize screen capture as an alternative to using the save button<br></div>
+    <div id="TextlowColor" style="margin-top: -128px;">Wallet does not support the QR Payment</div>
+
+    <button id="btn3" type="button" class="btn btn-primary btn-lg" style="margin-top: -48px;">
+        <a href="http://localhost:3000/" style="color: white; text-decoration: none;">Save QR Code</a>
+    </button>
+
+    <footer>
+
+        <h3 id="TextlowColor"><a href="http://localhost:3000/">How To Pay</a></h3>
+        <p> © PraIn FinTech Co., Ltd. All rights reserved.<br>
+            Powered by PraIn FinTech Co., Ltd.</p>
+    </footer>
+</body>
+
+</html>

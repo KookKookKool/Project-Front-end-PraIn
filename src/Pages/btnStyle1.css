@@ -1,0 +1,22 @@
+/* styles.css */
+
+/* styles.css */
+
+.p-button {
+    width: 38%;
+    height: 80px;
+    color: #000000; /* Set your desired text color */
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Set your desired border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+        background-color: #2436da; 
+    }
+    &:active,
+    &:focus {
+      background-color: #ffffff; /* Set the color you want when the button is pressed or focused */
+    }
+  }

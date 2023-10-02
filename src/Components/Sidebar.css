@@ -1,0 +1,56 @@
+
+.sidebar {
+    background-color: #ffffff; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    width: 200px; /* ความกว้างของ Sidebar */
+    height: 48%; 
+    box-shadow: none;
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* ลบการแสดงรูปแบบของรายการ */
+    padding: 0;
+  }
+  
+  .sidebar li {
+    display: flex;
+    padding: 10px;
+    white-space: nowrap;  
+    align-items: center;
+  }
+ 
+  .sidebar h3 {
+    white-space: nowrap; 
+    margin-bottom: 20px;
+    color: black;
+}
+  
+  .sidebar a {
+    text-decoration: none; /* ลบการเส้นใต้ข้อความลิงก์ */
+    color: rgb(0, 0, 0); /* สีข้อความลิงก์ */
+  }
+  
+  
+  /* ปรับแต่งสไตล์ลิงก์เมื่อ active หรือถูกเลือก */
+  .sidebar a.active {
+    background-color: #4520ec;
+    font-weight: bold;
+  }
+
+
+  .tabs-vertical {
+    display: flex;
+    gap: 12px; /* ระยะห่างระหว่าง Icon และข้อความในแท็บ */
+  }
+  
+  .tabs-vertical .MuiTab-root {
+    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ระยะห่างระหว่าง Icon และข้อความในแท็บ */
+    padding: 8px; /* ระยะห่างส่วนเนื้อหาของแท็บ */
+  }
+
+  .h4 {
+    white-space: nowrap; 
+  }

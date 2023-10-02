@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+// App.js
 import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Sidebar from './Components/Sidebar';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import OnSuccess from './Components/Success';
 
 function App() {
+  const [showSidebar, setShowSidebar] = useState(true);
+  const [showHeader, setShowHeader] = useState(true);
+  const [showFooter, setShowFooter] = useState(true);
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleShowSuccess = () => {
+    setShowSidebar(false);
+    setShowHeader(false);
+    setShowFooter(false);
+    setShowSuccess(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        {showHeader && <Header />}
+        <div className="content">
+          {showSidebar && <Sidebar />}
+        </div>
+        {showFooter && <Footer />}
+        {showSuccess && <OnSuccess handleShowSuccess={handleShowSuccess} />}
+      </div>
+    </Router>
   );
 }
 

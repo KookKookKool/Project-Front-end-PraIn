@@ -1,0 +1,66 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #ffffff;
+  }
+  
+  .Boxheader {
+    padding: 20px; /* กำหนดระยะห่างขอบภายใน Boxheader */
+    width: 300px; /* กำหนดความกว้างของ Boxheader */
+    height: 150px;
+  }
+  
+  #logoheaderline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: -25px;
+    margin-left: 8px;
+  }
+  
+  #logoheaderline p {
+    white-space: nowrap; /* จัดให้ข้อความไม่ขึ้นบรรทัดใหม่ */
+    align-items: center;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left img {
+    width: 106px;
+    height: 106px;
+    margin-right: 10px;
+  }
+  
+  .header-right img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 130%;
+  }
+  
+  #logo-tagline {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+  }
+  
+  #logo-tagline img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  #cpmtext{
+    margin-left: 4%;
+    margin-top: 12%;
+  }
+  
+
+  
+  

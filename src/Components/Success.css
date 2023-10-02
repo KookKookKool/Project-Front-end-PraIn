@@ -1,0 +1,60 @@
+body1 {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center; /* จัดให้เนื้อหาตรงกลางทั้งตัวอักษรและปุ่ม */
+}
+
+/* ปรับแต่งสไตล์ของปุ่ม */
+.countdown-button {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    /* พื้นหลังสีขาว */
+    color: black;
+    /* ข้อความสีดำ */
+    border: 2px solid #7c7c7c;
+    /* ขอบสีดำ */
+    border-radius: 10px;
+    /* มุมโค้ง */
+    padding: 10px 20px;
+    /* ขอบสัมพันธ์ของปุ่ม */
+    font-size: 16px;
+    /* ขนาดตัวอักษร */
+    margin-top: -2%;
+}
+
+/* ปรับแต่งสไตล์ของเวลานับถอยหลัง */
+.countdown-timer {
+    font-size: 24px;
+    /* ขนาดตัวอักษรของเวลา */
+    color: blue;
+    /* สีเวลา */
+}
+
+#TextlowColor {
+    color: #7c7c7c;
+}
+#TextlowColor a {
+color: #7c7c7c;
+font-weight: bold;
+}
+#btn3 {
+    color: aliceblue;
+width: 250px; /* กำหนดความกว้าง */
+height: 50px; /* กำหนดความสูง */
+padding: 10px 20px; /* กำหนดการเพิ่มเติมด้านในของปุ่ม */
+font-size: 18px; /* กำหนดขนาดตัวอักษร */
+margin: 10px; /* กำหนดระยะห่างรอบขอบของปุ่ม */
+}
+
+/* ปรับสีของปุ่ม */
+#btn:hover {
+background-color: #2f00ff; /* สีเมื่อเม้าส์ไปวัตถุ */
+color: white; /* สีตัวอักษรเมื่อเม้าส์ไปวัตถุ */
+}
+
